@@ -397,7 +397,7 @@ body.offcanvas {
 .colorlib-experience,
 .colorlib-skills,
 .colorlib-education,
-.colorlib-conference,
+.colorlib-blog,
 .colorlib-work,
 .colorlib-about,
 .colorlib-services,
@@ -411,7 +411,7 @@ body.offcanvas {
     .colorlib-experience,
     .colorlib-skills,
     .colorlib-education,
-    .colorlib-conference,
+    .colorlib-blog,
     .colorlib-work,
     .colorlib-about,
     .colorlib-services,
@@ -899,22 +899,22 @@ body.offcanvas {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
         font-size: 28px; } }
 
-.conference-entry {
+.blog-entry {
   width: 100%;
   float: left;
   background: #fff;
   margin-bottom: 3em; }
   @media screen and (max-width: 768px) {
-    .conference-entry {
+    .blog-entry {
       margin-bottom: 3em; } }
-  .conference-entry .conference-img {
+  .blog-entry .blog-img {
     width: 100%;
     float: left;
     overflow: hidden;
     position: relative;
     z-index: 1;
     margin-bottom: 25px; }
-    .conference-entry .conference-img img {
+    .blog-entry .blog-img img {
       position: relative;
       max-width: 100%;
       -webkit-transform: scale(1);
@@ -925,7 +925,7 @@ body.offcanvas {
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
-  .conference-entry .desc h3 {
+  .blog-entry .desc h3 {
     font-size: 16px;
     margin-bottom: 25px;
     line-height: auto;
@@ -933,10 +933,10 @@ body.offcanvas {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: "Quicksand", Arial, sans-serif; }
-    .conference-entry .desc h3 a {
+    .blog-entry .desc h3 a {
       color: #000;
       text-decoration: none; }
-  .conference-entry .desc span {
+  .blog-entry .desc span {
     display: block;
     margin-bottom: 20px;
     font-size: 12px;
@@ -944,14 +944,14 @@ body.offcanvas {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400; }
-    .conference-entry .desc span small i {
+    .blog-entry .desc span small i {
       color: #999999; }
-  .conference-entry .desc .lead {
+  .blog-entry .desc .lead {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #000; }
-  .conference-entry:hover .conference-img img {
+  .blog-entry:hover .blog-img img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1499,7 +1499,7 @@ button{
   box-sizing:border-box;
 }
 
-.conference-link {
+.blog-link {
 	color:black;
 	text-decoration:underline;
 	font-size:90%;
