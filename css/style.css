@@ -307,11 +307,14 @@ figure {
           font-weight: 500; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-              font-size: 40px; } }
+              font-size: 30px; } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
-          font-size: 28px;
+          font-size: 30px;
+	  white-space: nowrap; 
+          overflow: hidden;    
+          text-overflow: ellipsis; 
           font-weight: 500;
-		  color: #000;
+		  color: red;
           line-height: 1.5;
           margin-bottom: 30px;
           font-family: "Quicksand", Arial, sans-serif;	}
