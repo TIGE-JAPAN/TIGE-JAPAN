@@ -1505,3 +1505,14 @@ button{
 	font-size:90%;
 	margin-left:5%;
 }
+
+section#colorlib-hero.js-fullheight {
+    height: 40vh !important;
+    min-height: 180px !important;
+}
+#colorlib-hero .flexslider .slides li {
+    min-height: 180px !important;
+}
+#colorlib-hero .flexslider .slider-text {
+    min-height: 180px !important;
+}
