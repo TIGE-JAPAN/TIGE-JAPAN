@@ -235,11 +235,11 @@ figure {
       padding: 0 1em; } }
 
 #colorlib-hero {
-  min-height: 150px;
+  min-height: 100px;
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;
@@ -283,13 +283,13 @@ figure {
     #colorlib-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
-      min-height: 150px;
+      min-height: 100px;
       z-index: 9; }
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
-        min-height: 250px;
-        padding: 2.5em;
+        min-height: 100px;
+        padding: 1.25em;
         position: relative; }
         @media screen and (max-width: 768px) {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
@@ -365,30 +365,7 @@ figure {
 		padding-right:10px;	}
 
 
-/* 添加在文件末尾的覆盖样式 */
-#colorlib-hero {
-  min-height: 250px !important;
-  margin-bottom: 5em !important;
-}
 
-#colorlib-hero .flexslider,
-#colorlib-hero .flexslider .slides,
-#colorlib-hero .flexslider .slides li {
-  min-height: 250px !important;
-}
-
-#colorlib-hero .flexslider .slider-text,
-#colorlib-hero .flexslider .slider-text-inner {
-  min-height: 250px !important;
-}
-
-@media screen and (max-width: 768px) {
-  #colorlib-hero,
-  #colorlib-hero .flexslider,
-  #colorlib-hero .flexslider .slides li {
-    min-height: 150px !important;
-  }
-}
 
 
 body.offcanvas {
