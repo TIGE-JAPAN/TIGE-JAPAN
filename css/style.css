@@ -1498,3 +1498,27 @@ button{
   font-family:"Quicksand", Arial, sans-serif;
   box-sizing:border-box;
 }
+/* 添加在文件末尾的覆盖样式 */
+#colorlib-hero {
+  min-height: 250px !important;
+  margin-bottom: 5em !important;
+}
+
+#colorlib-hero .flexslider,
+#colorlib-hero .flexslider .slides,
+#colorlib-hero .flexslider .slides li {
+  min-height: 250px !important;
+}
+
+#colorlib-hero .flexslider .slider-text,
+#colorlib-hero .flexslider .slider-text-inner {
+  min-height: 250px !important;
+}
+
+@media screen and (max-width: 768px) {
+  #colorlib-hero,
+  #colorlib-hero .flexslider,
+  #colorlib-hero .flexslider .slides li {
+    min-height: 150px !important;
+  }
+}
