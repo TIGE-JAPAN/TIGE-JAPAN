@@ -1502,33 +1502,41 @@ button{
   font-family:"Quicksand", Arial, sans-serif;
   box-sizing:border-box;
 }
-/* 强制覆盖所有 hero section 高度 */
+/* 更全面的高度控制 */
 #colorlib-hero,
 #colorlib-hero .flexslider,
 #colorlib-hero .flexslider .slides,
 #colorlib-hero .flexslider .slides li,
 #colorlib-hero .flexslider .slider-text,
-#colorlib-hero .flexslider .slider-text-inner {
+#colorlib-hero .flexslider .slider-text-inner,
+#colorlib-hero .js-fullheight {
   height: 50vh !important;
-  min-height: 250px !important; /* 保留最小高度 */
+  max-height: 50vh !important;
 }
 
-/* 覆盖可能的 JavaScript 设置 */
+/* 背景图片容器特殊处理 */
+#colorlib-hero .flexslider .slides li {
+  background-size: contain;
+  background-position: center center;
+}
+
+/* 完全禁用JavaScript可能的高度设置 */
 .js-fullheight {
-  height: 50vh !important;
+  height: auto !important;
+  min-height: auto !important;
 }
 
-/* 调整内部元素间距 */
-#colorlib-hero .flexslider .slider-text > .slider-text-inner {
-  padding: 1em !important;
-}
-
-/* 响应式调整 */
+/* 更精确的响应式控制 */
 @media screen and (max-width: 768px) {
   #colorlib-hero,
   #colorlib-hero .flexslider,
   #colorlib-hero .flexslider .slides li {
-    min-height: 150px !important;
     height: 30vh !important;
+    max-height: 30vh !important;
+  }
+  
+  /* 移动端调整内部元素 */
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+    padding: 0.5em !important;
   }
 }
